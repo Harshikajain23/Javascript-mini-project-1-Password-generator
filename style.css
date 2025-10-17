@@ -1,0 +1,137 @@
+
+
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+     font-family:"Roboto Condensed", sans-serif; 
+      background: var(--dkblue);
+   background: linear-gradient(90deg, var(--dkblue) 0%, rgb(142, 132, 132) 50% , var(--dkblue)100%);
+   
+   width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.container{
+   width: 90%;
+   max-width: 450px;
+ 
+ 
+
+}
+
+:root{
+    --dkblue : rgba(20, 20, 76);
+    --ltblue: rgb(71, 71, 222);
+    --ltblue2: rgb(55, 55, 126);
+
+}
+
+h1{
+    color: white;
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.display-container{
+   
+    background-color: rgba(9, 9, 50, 0.506);
+    position: relative;
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid rgb(110, 110, 219);
+    margin: 1rem 0;
+    padding-top: 0.35 rem;
+    height: 60px;
+
+    
+
+    
+
+}
+
+.display{
+    color: gray;
+
+    background-color: transparent;
+    padding: 1.15rem 1 rem;
+    font-weight: 600;
+    font-size:1.5rem;
+    line-height: 50px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+    top: 2px;
+    border: none;
+    transform: translateY(-15%);
+
+}
+
+.display::placeholder{
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: gray;
+    opacity: 0.65;
+    text-transform: uppercase;
+}
+
+.display-container button{
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+}
+
+.input-container{
+     background-color: rgba(9, 9, 50, 0.506);
+     border-radius: 1rem;
+     width: 86%;
+     max-width: 450px;
+     padding: 2rem;
+     border-bottom: 0.35rem solid rgb(110, 110, 219);
+     top: -30;
+   
+
+}
+
+.length-container{
+    margin-top: -5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.length-container p:nth-child(1){
+    color: white;
+    font-size: 1.5rem;
+}
+
+.length-container p:nth-child(2){
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+   
+
+}
