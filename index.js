@@ -32,6 +32,7 @@ let checkCount = 0;
 
 handleSlider();
 // set strength circle to gray
+setIndicator("#ccc");
 
 // set password length
 function handleSlider(){
@@ -40,6 +41,14 @@ function handleSlider(){
     inputSlider.value = passwordLength;
 
     lengthDisplay.innerText = passwordLength;
+
+    const min = inputSlider.min;
+    const max = inputSlider.max;
+    // inputSlider.style.backgroundSize = ((passwordLength-min)*100/(max-min)) + "% 100%";
+
+const percent = ((passwordLength - min) * 100) / (max - min);
+
+ inputSlider.style.background = `linear-gradient(to right, #ffff ${percent}%, rgba(45, 32, 81, 0.688) ${percent}%)`;
 
 }
 
