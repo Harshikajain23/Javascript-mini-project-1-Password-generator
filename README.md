@@ -1,6 +1,8 @@
+
+# Password Generator
+
 ![Password Generator Screenshot](assets/Password_generator%20snap.JPG)
 
-## Password Generator
 
 Password generator application built using HTML, CSS and Javascript.
 
